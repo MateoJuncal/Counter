@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f6f7f8;
+}
+body {
+  min-height: 100vh;
+  background-color: #3c3c3c;
+}
+.App {
+  width: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  width: 100%;
+  font-size: 6rem;
+  margin: 2rem 0 3rem 0;
+}
+.Number {
+  font-size: 10rem;
+  font-weight: 500;
+}
+.NumberContainer {
+  width: 80vw;
+  max-width: 25rem;
+  height: 80vw;
+  max-height: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.4em solid #f6f7f8;
+}
+.ButtonsContainer {
+  display: flex;
+  flex-direction: column;
+}
+.StartButton,
+.ResetButton {
+  width: 80vw;
+  max-width: 25rem;
+  height: 10vh;
+  max-height: 10rem;
+  margin-top: 3rem;
+  font-size: 3rem;
+  border-radius: 10px;
+  border-width: 3px;
+  background-color: #f6f7f8;
+}
+.StartButton:hover,
+.ResetButton:hover {
+  cursor: pointer;
+  color: #f6f7f8;
+  background-color: #3c3c3c;
+  border-color: #f6f7f8;
+}
