@@ -1,6 +1,12 @@
 import "./App.css";
+import "./Buttons.js";
+import Button from "./Buttons.js";
 
 function App() {
+  const handlerClick = () => {
+    console.log("Hola");
+  };
+
   return (
     <div className="App">
       <h1>Counter</h1>
@@ -8,10 +14,8 @@ function App() {
         <p className="Number">0</p>
       </div>
       <div className="ButtonsContainer">
-        <button className="StartButton" onClick={console.log("hola")}>
-          Start
-        </button>
-        <button className="ResetButton">Reset</button>
+        <Button text="Start" classN="StartButton" doThis={handlerClick} />
+        <Button text="Reset" classN="ResetButton" />
       </div>
     </div>
   );
