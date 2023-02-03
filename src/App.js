@@ -1,21 +1,27 @@
 import "./App.css";
-import "./Buttons.js";
-import Button from "./Buttons.js";
+import "./components/Buttons.js";
+import Button from "./components/Buttons.js";
+import Number from "./components/Number.js";
+import { useState } from "react";
 
 function App() {
-  const handlerClick = () => {
-    console.log("Hola");
+  const [count, setCount] = useState(0);
+
+  const increment = () => {
+    setCount(count + 1);
+  };
+
+  const reset = () => {
+    setCount(0);
   };
 
   return (
     <div className="App">
       <h1>Counter</h1>
-      <div className="NumberContainer">
-        <p className="Number">0</p>
-      </div>
+      <Number number={count} />
       <div className="ButtonsContainer">
-        <Button text="Start" classN="StartButton" doThis={handlerClick} />
-        <Button text="Reset" classN="ResetButton" />
+        <Button text="Increment" classN="IncrementButton" doThis={increment} />
+        <Button text="Reset" classN="ResetButton" doThis={reset} />
       </div>
     </div>
   );

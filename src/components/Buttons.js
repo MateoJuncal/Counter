@@ -1,3 +1,5 @@
+import "../stylesheets/Buttons.css";
+
 function Button({ text, classN, doThis }) {
   return (
     <button className={classN} onClick={doThis}>

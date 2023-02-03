@@ -1,0 +1,15 @@
+.Number {
+  font-size: 10em;
+  font-weight: 500;
+}
+.NumberContainer {
+  width: 80vw;
+  max-width: 25rem;
+  height: 80vw;
+  max-height: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.4rem solid #f6f7f8;
+  overflow: hidden;
+}

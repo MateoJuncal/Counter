@@ -25,46 +25,7 @@ h1 {
   font-size: 6rem;
   margin: 2rem 0 3rem 0;
 }
-.Number {
-  font-size: 10rem;
-  font-weight: 500;
-}
-.NumberContainer {
-  width: 80vw;
-  max-width: 25rem;
-  height: 80vw;
-  max-height: 25rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1.4em solid #f6f7f8;
-}
 .ButtonsContainer {
   display: flex;
   flex-direction: column;
-}
-.StartButton,
-.ResetButton {
-  width: 80vw;
-  max-width: 25rem;
-  height: 10vh;
-  max-height: 10rem;
-  margin-top: 2rem;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 3rem;
-  font-weight: 700;
-  border: 3px solid #3c3c3c;
-  border-radius: 10px;
-  color: #3c3c3c;
-  background-color: #f6f7f8;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.StartButton:hover,
-.ResetButton:hover {
-  cursor: pointer;
-  color: #f6f7f8;
-  background-color: #3c3c3c;
-  border-color: #f6f7f8;
 }
